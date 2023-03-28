@@ -39,7 +39,7 @@ greeting:
   text: "Neurophysiology | Statistics | Biosignal Analysis | Data Science"
 # - displayed at the bottom
 closing-head: Khris Griffis, Ph.D.
-closing-para: blah
+closing-para: 
 
 # on all pages (and the first three you list display with greeting, if included)
 social:
