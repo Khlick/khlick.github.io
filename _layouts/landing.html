@@ -70,7 +70,7 @@
         {% unless my_page.options contains 'nolanding' %}
         <!-- check for empty categories, don't show empties -->
         {% assign this_title = my_page.title | downcase %}
-        {% if site.categories[this_title] %}
+        {% if site.categories contains this_title %}
       <section class="spotlight">
         <div class="image">
           <a href="{{ my_page.url | prepend:site.baseurl }}">
