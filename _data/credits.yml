@@ -107,12 +107,23 @@ licenses:
 #
 image-credit:
   - src : /images/valley.jpg
-    by  : Khris Griffis
+    by  : khrisgriffis
     url : https://www.khlick.com/Cover/Sculptures-of-Earth/i-RZ57XZx/A
+    lic: tm
   - src : /images/pubimg.jpg
-    by  : Khris Griffis
+    by  : khrisgriffis
     url : https://www.khlick.com/Cover/Refuge/i-q8PmWQX/A
+    lic: tm
   - src : /images/rambleimg.jpg
-    by  : Khris Griffis
-    url : https://www.khlick.com/Cover/Sculptures-of-Earth/i-6RctRgv/A
+    by  : khrisgriffis
+    url : https://www.khlick.com/Cover/The-Dregs-of-Virtue/i-HPcDXj9/A
+    lic: tm
+  - src : /images/confimg.jpg
+    by  : khrisgriffis
+    url : https://www.khlick.com/Cover/Refuge/i-m4sv5XB/A
+    lic: tm
+  - src : /images/expimg.jpg
+    by  : khrisgriffis
+    url : https://www.khlick.com/Cover/The-Dregs-of-Virtue/i-2CfbGct/A
+    lic: tm
 

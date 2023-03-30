@@ -1,0 +1,24 @@
+inherit_gem:
+  rubocop-shopify: rubocop.yml
+
+inherit_from:
+  - .rubocop_todo.yml
+
+require: rubocop-performance
+
+Performance:
+  Enabled: true
+
+AllCops:
+  TargetRubyVersion: 2.7
+  NewCops: disable
+  Exclude:
+    - 'vendor/bundle/**/*'
+
+Naming/MethodName:
+  Exclude:
+    - 'example/server/liquid_servlet.rb'
+
+# Backport https://github.com/Shopify/ruby-style-guide/pull/258
+Layout/BeginEndAlignment:
+  Enabled: true

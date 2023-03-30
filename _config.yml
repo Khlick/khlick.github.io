@@ -36,7 +36,14 @@ pubimg: "pubimg.jpg"
 # - set the greeting only if you want to display the first green section
 greeting:
   title: "Khris Griffis, Ph.D."  
-  text: "Neurophysiology | Statistics | Biosignal Analysis | Data Science"
+  text: >
+    Driven, multifaceted, and collaborative scientific adventurer with more than 10
+    years of academic research experience. Experienced neuroscientist with a strong
+    understanding in multiple physical and theoretical disciplines, offering 
+    extensive background incorporating statistical, mathematical and computational 
+    methodology into biological research. Strong communicator with the ability to 
+    lead scientific discussions, and communicate results to scientific and 
+    non-scientific audiences.
 # - displayed at the bottom
 closing-head: Khris Griffis, Ph.D.
 closing-para: 
@@ -100,22 +107,24 @@ compose:
 navlinks: bottom
 
 # expecting more publications? mark your list as in-progress
-publications_in_progress: yes
+publications_in_progress: no
 
 # Github pages posts future posts by default.
 # You'll want to move the user guide posts to _drafts if you set this to true.
 future: false
 
-# If you have custom extensions, specifically includes/_my/custom.scss,
+# If you have custom extensions, specifically includes /_my/custom.scss,
 # set this to yes
 custom_extensions: no
 
 # Build settings
 permalink: /:categories/:title.html
 markdown: kramdown
+
+
 #sass:
 #  style: compressed
-exclude: ['site.bat','compose.rb','README.md']
+exclude: ['site.bat','compose.rb','README.md','*.bak']
 include: ['_pages','.htaccess']
 defaults:
   - scope:
@@ -135,3 +144,14 @@ defaults:
 # to initialize arrays in assignments (assign myarr = site.empty_array)
 # (easier to grok than assign myarr = '' | split',')
 empty_array: []
+
+# PLUGIN CONFIGURATION
+highlighter: rouge
+kramdown: 
+  input: GFM
+  syntax_highlighter_opts: 
+    default_lang: matlab
+    css_class: 'syntax'
+    block:
+      line_numbers: true
+

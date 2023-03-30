@@ -6,35 +6,64 @@ excerpt: Mansuscripts, talks, lectures, etc..
 image: pubimg.jpg
 background-image: pubimg.jpg
 ---
-{%
-if site.social.linkedin-square %}
-<div class="table-wrapper">
-  <table class="alt"><tbody><tr><td style="text-align: center;">Visit my
-  <a target="_blank" href="{{ site.social.linkedin-square }}">LinkedIn profile</a></td>
-  </tr></tbody></table>
-</div>{%
-endif %}
-{%
-if site.categories.publications %}
+{% if site.categories.publications %}
 <div class="table-wrapper">
   <table>
-    <tbody>{%
-      include fn_groupsort_reverse.html unsorted=site.categories.publications groupby='priority' sortby='date'
-%}{%  for work in sorted_list %}
+    <tbody>
+      <!-- 
+        Use groupsort_reverse liq.fn to get grouped, sorted in reverse order.
+        This function returns sorted_list to the workspace which is a list of 
+        posts in the publications category
+      -->
+      {% include fn_groupsort_reverse.html 
+        unsorted=site.categories.publications 
+        groupby='type' 
+        sortby='pub-date' 
+      %}
+      {% assign cats = site.empty_array %}
+      {% for pub in sorted_list %}
+      {% unless cats contains pub.type %}
+          {% assign cats = cats | push: pub.type %}
+          <tr><td class="pub-head" colspan="2"><h2>{{ pub.type-label }}</h2></td></tr>
+      {% endunless %}
       <tr>
-        <td><b><a href="{{ work.url | prepend: site.baseurl }}">{{ work.title }}</a></b></td>
-        <td>{{ work.date | date: "%b %Y" }}</td>
-        <td>{{ work.excerpt | strip_html | truncatewords: 12 }}</td>
-        <td>
-          {% include techlist.html %}
+        <td class="pub-year"><a href="{{ pub.exturl }}" target="_blank">{{ pub.pub-date }}</a></td>
+        <td class="pub-ref">
+          <!-- Reference entry like jneurosci -->
+          <!-- wrap in post url -->
+          <a href="{{ pub.url | prepend: site.baseurl }}">
+          <!-- author list -->
+          {% include fn_parse_authors.liquid 
+            author-list=pub.pubauthor 
+            highlight=pub.author-highlight
+            display-type= 'short'
+          %}
+          &nbsp;
+          <!-- year -->
+          ({{ pub.pub-date }})&nbsp;
+          <!-- title -->
+          {{ pub.title | replace: ".","" -}}.&nbsp;
+          <!-- journal -->
+          {% if pub.published-in %}
+          <i>{{ pub.published-in -}}</i>,&nbsp;
+          {% endif %}
+          <!-- volume -->
+          {% if pub.volume %}
+           <b>{{ pub.volume -}}</b>,&nbsp;
+          {% endif %}
+          <!-- pages -->
+          {% if pub.page %}
+          {{ pub.page -}}
+          {% endif %}.
+          </a>
         </td>
-      </tr>{%
-      endfor %}
+      </tr>
+      {% endfor %}
     </tbody>
   </table>
-</div>{%
-  if site.publications_in_progress %}
-  <div class="publications_inprogress">In-progress, more to come.</div>{%
-  endif %}{%
-endif
-%}
+</div>
+{% endif %}
+
+{% if site.publications_in_progress %}
+  <div class="publications_inprogress">In-progress, more to come.</div>
+{% endif %}

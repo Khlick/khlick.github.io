@@ -1,0 +1,41 @@
+{% comment %}
+Parse a list of author-maps. Requires the following include-params:
+
+author-list: list of author maps, each contains keys: {family: ""; given: ""}
+highlight: family name of author to highlight
+display-type: one of 'short','full'. Indicates how names should be listed with 'short' being family, given initials and 'full' as family, given
+
+returns:
+author-string: string of authors, concatenated by ','
+
+{% endcomment %}
+{% assign author-string = "" %}
+
+{% liquid
+  for author in include.author-list
+    assign firstname = ""
+    if include.display-type == "short"
+      assign tmp = author.given | split: " "
+      for name in tmp
+         assign short = name | slice: 0 | upcase | append: "."
+         assign firstname = firstname | append: short
+      endfor  
+    else
+      assign firstname = firstname | append: author.given | append: "."
+    endif
+    
+    assign lastname = author.family | capitalize
+    assign thisAuthor = lastname | append: ", " | append: firstname
+    if lastname == include.highlight
+      assign thisAuthor = thisAuthor | prepend: "<b>" | append: "</b>"
+    endif
+    unless author-string==""
+      assign author-string = author-string | append: ", " | append: thisAuthor
+    else
+      assign author-string = author-string | append: thisAuthor
+    endunless
+  endfor 
+%}
+{% comment %}
+Return author-string as text
+{% endcomment %}{{ author-string | strip }}

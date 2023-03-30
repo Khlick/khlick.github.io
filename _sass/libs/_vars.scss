@@ -22,6 +22,7 @@
 	$size: (
 		element-height:		2.75em,
 		element-margin:		2em,
+		element-small-margin: 1em,
 		letter-spacing:		0.075em,
 		letter-spacing-alt:	0.225em
 	);
@@ -33,7 +34,8 @@
 		weight:				400,
 		weight-bold:		600,
 		weight-extrabold:	800,
-		family-fixed:		('Consolas', 'Inconsolata', 'Monaco', monospace),
+		family-fixed:		('Fira Code','Consolas', 'Inconsolata', 'Monaco', monospace),
+		fixed-small-size:    0.925em, 
 		fixed-size:            1em,
 		inline-fixed-size:     1.05em,
 		fixed-lheight:          1.75em,

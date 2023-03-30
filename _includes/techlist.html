@@ -1,5 +1,10 @@
+{% if include.work.categories contains "publications" %}
+<h4>Concepts:</h4>
+{% else %}
+<h4>Tags:</h4>
+{% endif %}
 <ul class="techlist">{%
-for tag in work.tags %}{%
+for tag in include.work.tags %}{%
   unless tag == 'featured' %}
 <li><span class="tech">{{ tag }}</span></li>{%
   endunless %}{%

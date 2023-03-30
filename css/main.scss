@@ -14,6 +14,10 @@ $banner: $baseurl + "/{{ site.bannerimg }}";
 @import 'syntax-highlighting.css';
 @import 'vendor/disqus.css';
 
+
+/* Use Fira Code for code blocks */
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
 /*
 	Spectral by HTML5 UP
 	html5up.net | @n33co
@@ -261,14 +265,14 @@ $banner: $baseurl + "/{{ site.bannerimg }}";
 	pre {
 		-webkit-overflow-scrolling: touch;
 		font-family: _font(family-fixed);
-		font-size: _font(fixed-size);
-		margin: 0 0 _size(element-margin) 0;
+		font-size: _font(fixed-small-size);
+		margin: 0 0 _size(element-small-margin) 0;
 
 		code {
 			border-radius: 6px;
 			display: block;
-			line-height: _font(fixed-lheight);
-			background-color: #EEEEEB;
+			line-height: _font(inline-fixed-size);
+			// background-color: #EEEEEB;
 			padding: 1em 1.5em;
 			overflow-x: auto;
 		}
@@ -2378,6 +2382,129 @@ $banner: $baseurl + "/{{ site.bannerimg }}";
      }
   }
 
-{% if site.custom_extensions == 'yes' %}
-{% include _my/custom.scss %}
-{% endif %}
+/* TIMELINE CARD APPEARANCE */
+.item {
+  padding-top: 100px;
+  min-height: 150px;
+  position: relative;
+
+  &:before {
+		background: #fff;
+    border: 4px solid #000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    content: "";
+    margin-left: 0;
+    position: relative;
+    z-index: 1;
+    left: 0rem;
+    top: -2rem;
+  }
+}
+
+.last-item:after {
+	background: #000;
+	border: 4px solid #000;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	content: "";
+	margin-left: 0;
+	position: relative;
+	z-index: 1;
+	left: 0rem;
+	top: -1rem;
+}
+
+.vertical-line {
+  width: 5px;
+	background-color: #000;
+	position: absolute;
+	left: 1.89rem;
+	top: 0;
+	bottom: 0;
+}
+
+.item .card-panel {
+  margin: 0;
+  margin: 2rem 0 0 3rem;
+}
+
+.item-date {
+  margin-top: -60px;
+  margin-left: 4rem;
+}
+
+.cv-title {
+  margin-bottom: 0;
+  margin-left: 15px;
+  line-height: 190%;
+
+  span {
+    padding: 1rem;
+  }
+}
+
+.last-item {
+  padding-top: 80px;
+  height: 60px;
+  position: relative;
+}
+
+/* Other custom modifications */
+.text-justify {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+td.pub-head {
+	background-color: _palette(border2-bg);
+	h2 {
+		text-align: center;
+		font-family: _font(prose-family);
+		font-size: _font(prose-size-large);
+		font-weight: _font(prose-weight-bold);
+		margin-bottom: 0;
+	}
+}
+
+td.pub-year {
+	vertical-align: middle;
+	font-family: _font(prose-family);
+	font-size: _font(prose-size-large);
+	font-weight: _font(prose-weight-bold);
+	a {
+		border-bottom: dotted 1px;
+		border-bottom-color: transparent;
+		text-decoration: none;
+
+		&:hover {
+			@include vendor('transition', ('color #{_duration(transitions)} ease', 'border-bottom-color #{_duration(transitions)} ease'));
+			border-bottom-color: inherit;
+		}
+	}
+}
+
+
+td.pub-ref {
+	font-family: _font(prose-family);
+	font-size: _font(prose-size-small);
+	a {
+		border-bottom: dotted 1px;
+		border-bottom-color: transparent;
+		text-decoration: none;
+
+		&:hover {
+			@include vendor('transition', ('color #{_duration(transitions)} ease', 'border-bottom-color #{_duration(transitions)} ease'));
+			border-bottom-color: inherit;
+		}
+	}
+}
+
+/* Below appears not to work, so I'm putting customizations in here */
+// {% if site.custom_extensions == 'yes' %}
+// {% include custom.scss %}
+// {% endif %}

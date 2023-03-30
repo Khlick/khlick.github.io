@@ -1,16 +1,21 @@
 ---
 layout: default
 ---
-  <section class="wrapper{% if page.options contains 'minihead' %} minihead{% endif %} style5">
-    <div class="inner{% if page.options contains 'fullwidth' %} fullwidth{% endif %}">{%
-      unless site.navlinks == 'none'
-%}{%    if page.categories contains 'publications'
+<section class="wrapper{% if page.options contains 'minihead' %} minihead{% endif %} style5">
+<div class="inner{% if page.options contains 'fullwidth' %} fullwidth{% endif %}">
+{%  unless site.navlinks == 'none' %}
+
+{%    if page.categories contains 'publications'
 %}{%      assign idxperma = '/publications/' | prepend: site.baseurl
 %}{%      assign idxtitle = 'publications Index'
 %}{%      assign idxbutton = 'Index'
-%}{%      include fn_groupsort_reverse.html unsorted=site.categories.publications groupby='priority' sortby='date'
-%}{%    endif
-%}{%    if page.categories.first == 'ramblings' and page.categories.last != 'ramblings'
+%}{%      include fn_groupsort_reverse.html 
+            unsorted=site.categories.publications 
+            groupby='name' 
+            sortby='pub-date' 
+%}{%  endif %}
+
+{%    if page.categories.first == 'ramblings' and page.categories.last != 'ramblings'
 %}{%      assign idxperma = page.categories | join: '/' | prepend: '/' | prepend: site.baseurl | append: '/'
 %}{%      assign idxtitle = 'Start page'
 %}{%      assign idxbutton = 'Start'
@@ -21,28 +26,29 @@ layout: default
 %}{%        endif
 %}{%      endfor
 %}{%      assign sorted_list = sorted_list | sort: 'date'
-%}{%    endif
-%}{%  endunless
-%}{%  if sorted_list
+%}{%  endif %}
+
+{%  endunless %}
+
+
+{%  if sorted_list
 %}{%    if site.navlinks == 'top' or site.navlinks == 'both'
 %}{%      include fn_sortednav.html posclass='btntop'
 %}{%    endif
 %}{%  endif
 %}{%  unless page.options contains 'minihead' %}
-      <span id="post-date">{{ page.date  | date: "%-d %B %Y" }}</span><hr
-        style="margin-top:3px;" />{%
+    <span id="post-date">{{ page.date  | date: "%-d %B %Y" }}</span>
+    <hr style="margin-top:3px;" />{%
       endunless
-%}{%  if page.categories contains 'publications' and page.tags %}
-      <h4>Skills</h4>
-  {%    assign work = page
-%}{%    include techlist.html %}
-  {%  endif
 %}
 
-      {{ content }}{%
+{%  unless page.tags=="" or page.tags == empty%}
+{%    include techlist.html work=page %}
+{%  endunless %}
 
-
-      if sorted_list
+    {{ content }}
+    
+{%    if sorted_list
 %}{%    if site.navlinks == 'bottom' or site.navlinks == 'both'
 %}{%      unless perma
 %}{%        assign perma = '/ramblings/' | prepend: site.baseurl
@@ -52,12 +58,12 @@ layout: default
 %}{%  endif
 %}{%  unless page.author == 'none'
 %}{%    include author-block.html %}
-  {%  endunless
+    {%  endunless
 %}{%  if jekyll.environment == "production"
 %}{%    unless page.options contains nocomment or page.categories contains 'publications'
 %}{%      include disqus.html %}
-  {%    endunless
+    {%    endunless
 %}{%  endif
 %}
-    </div>
-  </section>
+  </div>
+</section>

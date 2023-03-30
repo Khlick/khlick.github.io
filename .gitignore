@@ -12,6 +12,9 @@ _my/
 _includes/_my
 _layouts/_my
 Gemfile*.lock
+_bak/
+*.bak
+_bibliography
 
 # Windows image file caches
 Thumbs.db
