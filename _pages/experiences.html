@@ -5,28 +5,38 @@ permalink: /experiences/
 excerpt: An historical perspective
 image: expimg.jpg
 background-image: expimg.jpg
-tags: ["experiences"]
+tags:
+- experiences
+style-includes: "/css/materialize-trunc.css"
 ---
 {% if site.categories.experiences %}
-<div class="container row">
+<div id="timeline" class="container">
   {% assign steps = site.categories.experiences | sort: 'date' | reverse %}
   {% for step in steps %}
-  <div class="item">
-    <i class="vertical-line"></i>
-    <h2 class="item-date">{{ step.date | date: '%m/%Y' }}{% if step.enddate %} - {{ step.enddate | date: '%m/%Y' }}{% endif %}</h2>
-    <div class="card-panel">
-      <h3 class="card-title">
-        {{ step.title }}
-      </h3>
-      <p>
-        {{ step.content }}
+  <div class="row">
+    <div class="item">
+      <i class="vertical-line"></i>
+      <p class="item-date">
+        {% if step.pre-flag %}<i class="{{- step.pre-flag | join: ' ' -}}"></i>{% endif %}
+        {{ step.date | date: '%m/%Y' }}{% if step.enddate %}-{{ step.enddate | date: '%m/%Y' -}}{% endif %}
+        {% if step.post-flag %}<i class="{{- step.post-flag | join: ' ' -}}"></i>{% endif %}
       </p>
+      <div class="card-panel">
+        <h3 class="card-title">
+          {{ step.title }}
+        </h3>
+        {% if step.location %}
+        <span class="card-subtitle">{{ step.location }}</span>
+        {% endif %}
+        <div class="card-content">
+          {{ step.content }}
+        </div>
+      </div>
     </div>
   </div>
   {% endfor %}
   <div class="last-item">
     <i class="vertical-line"></i>
-
   </div>
 </div>
 {% endif %}

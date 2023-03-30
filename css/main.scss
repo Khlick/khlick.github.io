@@ -8,7 +8,8 @@ $banner: $baseurl + "/{{ site.bannerimg }}";
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import 'font-awesome.min.css';
+// @import 'font-awesome.min.css';
+@import 'fontawesome6.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 @import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
 @import 'syntax-highlighting.css';
@@ -2383,12 +2384,13 @@ $banner: $baseurl + "/{{ site.bannerimg }}";
   }
 
 /* TIMELINE CARD APPEARANCE */
+
 .item {
   padding-top: 100px;
   min-height: 150px;
+	min-width: 90%;
   position: relative;
-
-  &:before {
+	&:before {
 		background: #fff;
     border: 4px solid #000;
     border-radius: 50%;
@@ -2415,37 +2417,53 @@ $banner: $baseurl + "/{{ site.bannerimg }}";
 	margin-left: 0;
 	position: relative;
 	z-index: 1;
-	left: 0rem;
-	top: -1rem;
+	left: 1.3rem;
+	bottom: 1rem;
 }
 
 .vertical-line {
   width: 5px;
 	background-color: #000;
 	position: absolute;
-	left: 1.89rem;
-	top: 0;
+	left: 1.82rem;
+	top: -2%;
 	bottom: 0;
 }
 
 .item .card-panel {
   margin: 0;
-  margin: 2rem 0 0 3rem;
+  margin: 0 0 0 1rem;
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .item-date {
   margin-top: -60px;
   margin-left: 4rem;
+	font-size: _font(prose-size-xxlarge);
 }
 
-.cv-title {
+.card-title {
   margin-bottom: 0;
   margin-left: 15px;
   line-height: 190%;
-
+	font-size: _font(prose-size-large);
+	font-weight: _font(prose-weight-bold);
   span {
     padding: 1rem;
   }
+}
+
+.card-subtitle {
+  margin-bottom: 0;
+  margin-left: 15px;
+  span {
+    padding: 1rem;
+  }
+}
+
+.card-content {
+  margin-left: 15px;
 }
 
 .last-item {

@@ -5,8 +5,8 @@
     <description>Neurophysiology | Statistics | Biosignals Analysis | Data Science</description>
     <link>https://khrisgriffis.com/</link>
     <atom:link href="https://khrisgriffis.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Mar 2023 23:55:08 -0700</pubDate>
-    <lastBuildDate>Wed, 29 Mar 2023 23:55:08 -0700</lastBuildDate>
+    <pubDate>Thu, 30 Mar 2023 14:32:38 -0700</pubDate>
+    <lastBuildDate>Thu, 30 Mar 2023 14:32:38 -0700</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
     
       <item>
@@ -113,6 +113,39 @@ cause rod adaptation.&lt;/p&gt;
         
         
         <category>publications</category>
+        
+      </item>
+    
+      <item>
+        <title>Project Scientist in Vision Science</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;Led 1 experimental and 1 in silico project investigating the molecular origin of photoreceptor discrete- and continuous-noise (2 firstauthor
+manuscripts in final preparations).&lt;/li&gt;
+  &lt;li&gt;Combined machine learning methods with electrophysiological recordings of single-photon responses to identify phosphodiesterase as
+the driver for photon-detection limits in rod photoreceptors.&lt;/li&gt;
+  &lt;li&gt;Mentored and trained a small team of post doc and staff research personnel on custom acquisition hardware, analysis software, and
+data analysis theory and methodology.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 01 Jul 2022 01:01:01 -0700</pubDate>
+        <link>https://khrisgriffis.com/experiences/project.html</link>
+        <guid isPermaLink="true">https://khrisgriffis.com/experiences/project.html</guid>
+        
+        
+        <category>experiences</category>
+        
+      </item>
+    
+      <item>
+        <title>Ph.D. Molecular, Cellular, And Integrative Physiology</title>
+        <description>&lt;p&gt;&lt;strong&gt;Thesis Title:&lt;/strong&gt; &lt;em&gt;Mechanisms of detection sensitivity and adaptation in the rod visual pathway.&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Jun 2022 01:01:01 -0700</pubDate>
+        <link>https://khrisgriffis.com/experiences/phd.html</link>
+        <guid isPermaLink="true">https://khrisgriffis.com/experiences/phd.html</guid>
+        
+        
+        <category>experiences</category>
         
       </item>
     
@@ -424,78 +457,6 @@ text article associated with this abstract published in The FASEB Journal.&lt;/e
         <pubDate>Sun, 01 Apr 2018 01:01:01 -0700</pubDate>
         <link>https://khrisgriffis.com/publications/kim2018.html</link>
         <guid isPermaLink="true">https://khrisgriffis.com/publications/kim2018.html</guid>
-        
-        
-        <category>publications</category>
-        
-      </item>
-    
-      <item>
-        <title>Olfactory Ensheathing Cell Transplantation after a Complete Spinal Cord Transection Mediates Neuroprotective and Immunomodulatory Mechanisms to Facilitate Regeneration
-</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.jneurosci.org/content/36/23/6269&quot; target=&quot;_blank&quot;&gt;Source&lt;/a&gt; (&lt;a href=&quot;https://www.jneurosci.org/content/36/23/6269.full.pdf&quot; target=&quot;_blank&quot;&gt;eprint&lt;/a&gt;)&lt;/p&gt;
-
-&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
-
-&lt;p&gt;Multiple neural and peripheral cell types rapidly respond to
-tissue damage after spinal cord injury to form a structurally and
-chemically inhibitory scar that limits axon regeneration. Astrocytes
-form an astroglial scar and produce chondroitin sulfate
-proteoglycans (CSPGs), activate microglia, and recruit blood-derived
-immune cells to the lesion for debris removal. One beneficial
-therapy, olfactory ensheathing cell (OEC) transplantation, results
-in functional improvements and promotes axon regeneration after
-spinal cord injury. The lack of an OEC-specific marker, however, has
-limited the investigation of mechanisms underlying their
-proregenerative effects. We compared the effects of enhanced green
-fluorescent protein-labeled fibroblast (FB) and OEC transplants
-acutely after a complete low-thoracic spinal cord transection in
-adult rats. We assessed the preservation of neurons and serotonergic
-axons, the levels of inhibitory CSPGs and myelin debris, and the
-extent of immune cell activation between 1 and 8 weeks postinjury.
-Our findings indicate that OECs survive longer than FBs
-post-transplantation, preserve axons and neurons, and reduce
-inhibitory molecules in the lesion core. Additionally, we show that
-OECs limit immune-cell activation and infiltration, whereas FBs
-alter astroglial scar formation and increase immune-cell
-infiltration and concomitant secondary tissue damage. Administration
-of cyclosporine-A to enhance graft survival demonstrated that immune
-suppression can augment OEC contact-mediated protection of axons and
-neurons during the first 2 weeks postinjury. Collectively, these
-data suggest that OECs have neuroprotective and immunomodulatory
-mechanisms that create a supportive environment for neuronal
-survival and axon regeneration after spinal cord injury.&lt;/p&gt;
-
-&lt;h3 id=&quot;significance-statement&quot;&gt;SIGNIFICANCE STATEMENT&lt;/h3&gt;
-&lt;p&gt;Spinal cord injury creates physical and chemical barriers
-to axon regeneration. We used a complete spinal cord transection
-model and olfactory ensheathing cell (OEC) or fibroblast (FB;
-control) transplantation as a repair strategy. OECs, but not FBs,
-intermingled with astrocytes, facilitated astroglial scar border
-formation and sequestered invading peripheral cells. OECs attenuated
-immune cell infiltration, reduced secondary tissue damage, protected
-neurons and axons in the lesion core, and helped clear myelin
-debris. Immunosuppression enhanced survival of OECs and FBs, but
-only OEC transplantation promoted scaffold formation in the lesion
-site that facilitated axon regeneration and neuron preservation.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 08 Jun 2016 01:01:01 -0700</pubDate>
-        <link>https://khrisgriffis.com/publications/khankan2016.html</link>
-        <guid isPermaLink="true">https://khrisgriffis.com/publications/khankan2016.html</guid>
-        
-        <category>5-HT</category>
-        
-        <category>chondroitin sulfate proteoglycans</category>
-        
-        <category>inflammation</category>
-        
-        <category>myelin</category>
-        
-        <category>OEC</category>
-        
-        <category>spinal cord injury</category>
-        
-        <category>neural repair</category>
         
         
         <category>publications</category>
