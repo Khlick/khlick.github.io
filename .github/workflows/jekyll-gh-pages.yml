@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+name: Jekyll Deploy WIN
 
 on:
   # Runs on pushes targeting the default branch
@@ -31,11 +31,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1.0.7
+        uses: dunkmann00/jekyll-v4-build-pages@v2.0.0
         with:
           source: ./
           destination: ./_site
-          future: true
           verbose: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
