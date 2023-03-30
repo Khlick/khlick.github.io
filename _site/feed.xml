@@ -3,10 +3,10 @@
   <channel>
     <title>Khris Griffis, Ph.D.</title>
     <description>Neurophysiology | Statistics | Biosignals Analysis | Data Science</description>
-    <link>https://khrisgriffis.com/</link>
-    <atom:link href="https://khrisgriffis.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Mar 2023 22:32:44 -0700</pubDate>
-    <lastBuildDate>Wed, 29 Mar 2023 22:32:44 -0700</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 29 Mar 2023 23:29:46 -0700</pubDate>
+    <lastBuildDate>Wed, 29 Mar 2023 23:29:46 -0700</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
     
       <item>
@@ -18,9 +18,9 @@
 
 &lt;p&gt;To elucidate the molecular events in solute carrier family 4 member 11 (SLC4A11)-deficient corneal endothelium that lead to the endothelial dysfunction that characterizes the dystrophies associated with SLC4A11 mutations, congenital hereditary endothelial dystrophy (CHED) and Fuchs endothelial corneal dystrophy 4. Comparative transcriptomic analysis (CTA) was performed in primary human corneal endothelial cells (pHCEnC) and murine corneal endothelial cells (MCEnC) with normal and reduced levels of SLC4A11 (SLC4A11 KD pHCEnC) and Slc4a11 (Slc4a11−/− MCEnC), respectively. Validation of differentially expressed genes was performed using immunofluorescence staining of CHED corneal endothelium, as well as western blot and quantitative PCR analysis of SLC4A11 KD pHCEnC and Slc4a11−/− MCEnC. Functional analyses were performed to investigate potential functional changes associated with the observed transcriptomic alterations. CTA revealed inhibition of cell metabolism and ion transport function as well as mitochondrial dysfunction, leading to reduced adenosine triphosphate (ATP) production, in SLC4A11 KD pHCEnC and Slc4a11−/− MCEnC. Co-localization of SNARE protein STX17 with mitochondria marker COX4 was observed in CHED corneal endothelium, as was activation of AMPK–p53/ULK1 in both SLC4A11 KD pHCEnC and Slc4a11−/− MCEnC, providing additional evidence of mitochondrial dysfunction and mitophagy. Reduced Na+-dependent HCO3− transport activity and altered NH4Cl-induced membrane potential changes were observed in Slc4a11−/− MCEnC. Reduced steady-state ATP levels and subsequent activation of the AMPK–p53 pathway provide a link between the metabolic functional deficit and transcriptome alterations, as well as evidence of insufficient ATP to maintain the Na+/K+-ATPase corneal endothelial pump as the cause of the edema that characterizes SLC4A11-associated corneal endothelial dystrophies.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 23 Mar 2023 00:00:00 -0700</pubDate>
-        <link>https://khrisgriffis.com/publications/zhang2020.html</link>
-        <guid isPermaLink="true">https://khrisgriffis.com/publications/zhang2020.html</guid>
+        <pubDate>Tue, 28 Mar 2023 20:19:35 -0700</pubDate>
+        <link>http://localhost:4000/publications/zhang2020.html</link>
+        <guid isPermaLink="true">http://localhost:4000/publications/zhang2020.html</guid>
         
         <category>CHED</category>
         
@@ -71,9 +71,9 @@ supplemented with epidural stimulation and climbing, OEC
 transplantation can increase axonal growth across the injury site
 and may promote recovery of propriospinal circuitry.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 23 Mar 2023 00:00:00 -0700</pubDate>
-        <link>https://khrisgriffis.com/publications/thornton2018.html</link>
-        <guid isPermaLink="true">https://khrisgriffis.com/publications/thornton2018.html</guid>
+        <pubDate>Tue, 28 Mar 2023 20:19:35 -0700</pubDate>
+        <link>http://localhost:4000/publications/thornton2018.html</link>
+        <guid isPermaLink="true">http://localhost:4000/publications/thornton2018.html</guid>
         
         <category>spinal cord injury</category>
         
@@ -117,9 +117,9 @@ kinetic parameters principally responsible for the differences in
 the flash responses of the two kinds of photoreceptors, which were
 likely during evolution to have resulted in the duplex retina.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 23 Mar 2023 00:00:00 -0700</pubDate>
-        <link>https://khrisgriffis.com/publications/reingruber2020.html</link>
-        <guid isPermaLink="true">https://khrisgriffis.com/publications/reingruber2020.html</guid>
+        <pubDate>Tue, 28 Mar 2023 20:19:35 -0700</pubDate>
+        <link>http://localhost:4000/publications/reingruber2020.html</link>
+        <guid isPermaLink="true">http://localhost:4000/publications/reingruber2020.html</guid>
         
         
         <category>publications</category>
@@ -181,9 +181,9 @@ $\chi^2 = 96.7(71.2, 125.5; 95\% C.I.)$, $p&amp;lt;10^{-5}$.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This abstract is from the Experimental Biology 2018 Meeting. There is no full 
 text article associated with this abstract published in The FASEB Journal.&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 23 Mar 2023 00:00:00 -0700</pubDate>
-        <link>https://khrisgriffis.com/publications/kim2018.html</link>
-        <guid isPermaLink="true">https://khrisgriffis.com/publications/kim2018.html</guid>
+        <pubDate>Tue, 28 Mar 2023 20:19:35 -0700</pubDate>
+        <link>http://localhost:4000/publications/kim2018.html</link>
+        <guid isPermaLink="true">http://localhost:4000/publications/kim2018.html</guid>
         
         
         <category>publications</category>
@@ -239,9 +239,9 @@ debris. Immunosuppression enhanced survival of OECs and FBs, but
 only OEC transplantation promoted scaffold formation in the lesion
 site that facilitated axon regeneration and neuron preservation.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 23 Mar 2023 00:00:00 -0700</pubDate>
-        <link>https://khrisgriffis.com/publications/khankan2016.html</link>
-        <guid isPermaLink="true">https://khrisgriffis.com/publications/khankan2016.html</guid>
+        <pubDate>Tue, 28 Mar 2023 20:19:35 -0700</pubDate>
+        <link>http://localhost:4000/publications/khankan2016.html</link>
+        <guid isPermaLink="true">http://localhost:4000/publications/khankan2016.html</guid>
         
         <category>5-HT</category>
         
@@ -322,9 +322,9 @@ helped delineate the fundamental mechanisms of signal detection and
 processing at the threshold of vision and over the dynamic range of
 rod vision.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 23 Mar 2023 00:00:00 -0700</pubDate>
-        <link>https://khrisgriffis.com/publications/griffis2022b.html</link>
-        <guid isPermaLink="true">https://khrisgriffis.com/publications/griffis2022b.html</guid>
+        <pubDate>Tue, 28 Mar 2023 20:19:35 -0700</pubDate>
+        <link>http://localhost:4000/publications/griffis2022b.html</link>
+        <guid isPermaLink="true">http://localhost:4000/publications/griffis2022b.html</guid>
         
         <category>visual neuroscience</category>
         
@@ -368,9 +368,9 @@ into a daytime phase and a nighttime phase. These findings raise the
 possibility that ultradian rhythms in CBT may be a useful biomarker
 for the pathology within the central nervous system.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 23 Mar 2023 00:00:00 -0700</pubDate>
-        <link>https://khrisgriffis.com/publications/griffis2022a.html</link>
-        <guid isPermaLink="true">https://khrisgriffis.com/publications/griffis2022a.html</guid>
+        <pubDate>Tue, 28 Mar 2023 20:19:35 -0700</pubDate>
+        <link>http://localhost:4000/publications/griffis2022a.html</link>
+        <guid isPermaLink="true">http://localhost:4000/publications/griffis2022a.html</guid>
         
         <category>circadian rhythms</category>
         
@@ -453,9 +453,9 @@ cause rod adaptation.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;This is a 2021 ARVO Annual Meeting abstract.&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 23 Mar 2023 00:00:00 -0700</pubDate>
-        <link>https://khrisgriffis.com/publications/griffis2021.html</link>
-        <guid isPermaLink="true">https://khrisgriffis.com/publications/griffis2021.html</guid>
+        <pubDate>Tue, 28 Mar 2023 20:19:35 -0700</pubDate>
+        <link>http://localhost:4000/publications/griffis2021.html</link>
+        <guid isPermaLink="true">http://localhost:4000/publications/griffis2021.html</guid>
         
         <category>vision science</category>
         
@@ -483,9 +483,9 @@ cause rod adaptation.&lt;/p&gt;
 
 &lt;p&gt;To characterize the impact of SLC4A11 mutations associated with congenital hereditary endothelial dystrophy (CHED) and Fuchs endothelial corneal dystrophy type 4 (FECD4) on corneal endothelial cell (CEnC) function and SLC4A11 protein localization.    Human SLC4A11&lt;sup&gt;-/-&lt;/sup&gt; CEnC lines were generated by CRISPR-Cas9 mediated gene editing. SLC4A11 wildtype (SLC4A11WT) and SLC4A11 mutant (SLC4A11MU) human CEnC lines were generated by stable transduction with lentiviruses containing either SLC4A11WT or SLC4A11MU expression vectors harboring CHED-/FECD4-associated SLC4A11 mutations (CHED: c.374G&amp;gt;A, c.1813C&amp;gt;T, c.2263C&amp;gt;T; FECD4: c.2224G&amp;gt;A). Functional assays were performed to assess cell migration, proliferation, viability after induced oxidative stress and NH4Cl-induced membrane conductance in the generated SLC4A11WT, SLC4A11MU and SLC4A11&lt;sup&gt;-/-&lt;/sup&gt; CEnC lines. Cell barrier function in SLC4A11WT and SLC4A11&lt;sup&gt;-/-&lt;/sup&gt; CEnC were assessed by electric cell-substrate impedance sensing (ECIS). Immunostaining was performed to determine the subcellular localization of SLC4A11 protein in the generated SLC4A11WT and SLC4A11MU CEnC lines and human primary CEnC. SLC4A11&lt;sup&gt;-/-&lt;/sup&gt; CEnC and the majority of the SLC4A11MU CEnC lines exhibited significantly increased migration rates, altered proliferation, and decreased cell viability under oxidative stress compared to SLC4A11WT CEnC. Induction with 10mM NH4Cl led SLC4A11WT CEnC to depolarize; conversely, SLC4A11&lt;sup&gt;-/-&lt;/sup&gt; CEnC hyperpolarized and the majority of SLC4A11MU CEnC either hyperpolarized or had minimal membrane potential changes following NH4Cl induction. Based on ECIS modeling, SLC4A11WT CEnC demonstrated increased cell-substrate adhesion and membrane capacitances compared to SLC4A11&lt;sup&gt;-/-&lt;/sup&gt; CEnC. Immunostaining of primary CEnC and SLC4A11WT CEnC lines for SLC4A11 demonstrated predominately cell surface staining with partial colocalization with mitochondrial marker COX4 within punctate subcellular structures. SLC4A11MU CEnC lines also displayed mainly cell surface staining of SLC4A11, except for SLC4A11MU c.2263C&amp;gt;T CEnC, which exhibited mostly perinuclear staining.    CHED- and FECD4-associated SLC4A11 mutations likely lead to CEnC dysfunction, and ultimately CHED and FECD4, by interfering with cell migration, proliferation, viability, membrane conductance, barrier function, and/or cell surface localization of the SLC4A11 protein in CEnC.  This abstract was presented at the 2022 ARVO Annual Meeting, held in Denver, CO, May 1-4, 2022, and virtually.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 23 Mar 2023 00:00:00 -0700</pubDate>
-        <link>https://khrisgriffis.com/publications/chung2022.html</link>
-        <guid isPermaLink="true">https://khrisgriffis.com/publications/chung2022.html</guid>
+        <pubDate>Tue, 28 Mar 2023 20:19:35 -0700</pubDate>
+        <link>http://localhost:4000/publications/chung2022.html</link>
+        <guid isPermaLink="true">http://localhost:4000/publications/chung2022.html</guid>
         
         <category>CHED</category>
         
