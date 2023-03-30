@@ -21,6 +21,7 @@ for /f "tokens=1,2 delims==" %%i in (_site.env) do @set %%i=%%j
 if x%1==xdev goto serve
 if x%1==xdevnof goto nofuture
 if x%1==xprod goto prod
+if x%1==xpubd goto alldrafts
 if x%1==xpublish goto write
 echo Nothing to do.
 
@@ -43,16 +44,22 @@ set JEKYLL_ENV=production
 call bundle exec jekyll build %JKL_MYCONFIGS%
 goto :done
 
+:alldrafts
+set JEKYLL_ENV=production
+call bundle exec jekyll build %JKL_MYCONFIGS% --drafts
+goto :done
+
 :publish
 ECHO "Publishing to "%GH_BRANCH%"."
+call git checkout %BH_BRANCH%
 call git add .
 call git commit -m message
-call git push origin %BH_BRANCH%
+call git push -u origin %BH_BRANCH%
 goto :done
 
 :write
 set JEKYLL_ENV=production
-call bundle exec jekyll build %JKL_MYCONFIGS% 
+call bundle exec jekyll build %JKL_MYCONFIGS% --drafts
 ECHO Building site...
 goto publish
 
