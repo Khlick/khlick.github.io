@@ -23,12 +23,12 @@ function moveDrafts {
 
 switch -Wildcard ($type) {
   "serve*" { 
-    $out = "bundle exec jekyll serve $JKL_MYCONFIGS --watch $(($type.Contains('nof')) ? '' : '--future')"
+    $out = "bundle exec jekyll serve $JKL_MYCONFIGS --watch $(($type.Contains('nof')) ? '' : '--future') --verbose"
     Invoke-Expression $out
     Break
   }
   "prod*" {
-    $out = "bundle exec jekyll build $JKL_MYCONFIGS"
+    $out = "bundle exec jekyll build $JKL_MYCONFIGS --verbose"
     Invoke-Expression $out
     Break
   }
@@ -36,14 +36,14 @@ switch -Wildcard ($type) {
     if ($type.Contains("d")) { 
       moveDrafts
     }
-    $out = "bundle exec jekyll build $JKL_MYCONFIGS"
+    $out = "bundle exec jekyll build $JKL_MYCONFIGS --verbose"
     Write-Host "Calling $out"
     Invoke-Expression $out
     # publish will push to git
     git checkout $BH_BRANCH
     git add .
     git commit -m $message
-    git push -u origin $BH_BRANCH
+    git push origin $BH_BRANCH
   }
   Default {
     Write-Host "Type arg must be one of: serve, production, publish, publishdraft"
