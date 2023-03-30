@@ -58,7 +58,7 @@ call git push -u origin %BH_BRANCH%
 goto :done
 
 :write
-powershell -Command "Get-Item –Path "%ROOT_DIR%"\_drafts\*.md | Move-Item -Destination "%ROOT_DIR%"\_posts"
+powershell -Command "Get-Item –Path "'%ROOT_DIR%"\_drafts\*.md' | Move-Item -Destination '"%ROOT_DIR%"\_posts'"
 set JEKYLL_ENV=production
 call bundle exec jekyll build %JKL_MYCONFIGS%
 ECHO Building site...
