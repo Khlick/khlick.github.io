@@ -10,19 +10,26 @@
 :: JKL_REMOTEUSER=myremoteuser
 :: JKL_REMOTEEXCLUDES=admin/; anotherapp/; myimportantremotefile.html;
 :: -------------------------------------
-IF %2=="" ( SET "message='Update site'" ) ELSE ( SET "message=%2" )
-
 if x%1==x goto :oops
 
+IF %2=="" ( 
+  SET "message='Update site'" 
+  ) ELSE ( 
+    SET "message=%2" 
+  )
+
 REM parse _site.env
-SET ROOT_DIR = %~dp0
+
+SET ROOT_DIR = "%~dp0"
+
 for /f "tokens=1,2 delims==" %%i in (_site.env) do @set %%i=%%j
 
-if x%1==xdev goto serve
-if x%1==xdevnof goto nofuture
-if x%1==xprod goto prod
-if x%1==xpubd goto alldrafts
-if x%1==xpublish goto write
+if x%1==xdev goto :serve
+if x%1==xdevnof goto :nofuture
+if x%1==xprod goto :prod
+if x%1==xpubd goto :alldrafts
+if x%1==xpublish goto :write
+if x%1==xtest goto :test
 echo Nothing to do.
 
 :oops
@@ -58,11 +65,15 @@ call git push -u origin %BH_BRANCH%
 goto :done
 
 :write
-powershell -Command "Get-Item -Path "'%ROOT_DIR%"\_drafts\*.md' | Move-Item -Destination '"%ROOT_DIR%"\_posts'"
+powershell -Command "Get-Item -Path '"%ROOT_DIR%"\_drafts\*.md' | Move-Item -Destination '"%ROOT_DIR%"\_posts'"
 set JEKYLL_ENV=production
 call bundle exec jekyll build %JKL_MYCONFIGS%
 ECHO Building site...
 goto publish
+
+:test
+ECHO "Get-Item -Path "%ROOT_DIR%"\_drafts\*.md | Move-Item -Destination "%ROOT_DIR%"\_posts"
+goto :done
 
 :done
 echo Done.
