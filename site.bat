@@ -47,7 +47,7 @@ goto :done
 ECHO "Publishing to "%GH_BRANCH%"."
 call git add .
 call git commit -m message
-call git push -u origin %BH_BRANCH%
+call git push origin %BH_BRANCH%
 goto :done
 
 :write
