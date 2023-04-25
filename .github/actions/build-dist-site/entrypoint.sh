@@ -39,5 +39,5 @@ fi
 # cd "$PAGES_GEM_HOME"
 cd "$SOURCE_DIRECTORY"
 bundle install
-bundel exec jekyll build "$VERBOSE" "$FUTURE" --destination "$DESTINATION_DIRECTORY"
+bundle exec jekyll build "$VERBOSE" "$FUTURE" --destination "$DESTINATION_DIRECTORY"
 # $GITHUB_PAGES build "$VERBOSE" "$FUTURE" --source "$SOURCE_DIRECTORY" --destination "$DESTINATION_DIRECTORY"
