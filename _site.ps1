@@ -22,14 +22,14 @@ function moveDrafts {
 
 switch -Wildcard ($type) {
   "serve*" { 
-    $out = "bundle exec jekyll serve $JKL_MYCONFIGS --watch --drafts $(($type.Contains('nof')) ? '' : '--future') --verbose"
+    $out = "bundle exec jekyll serve $JKL_MYCONFIGS --watch --drafts $(($type.Contains('nof')) ? '' : '--future')"
     Invoke-Expression $out
-    # $chromepath = Join-Path $env:ProgramFiles "Google" "Chrome" "Application" "chrome.exe"
-    # Start-Process -FilePath $chromepath "localhost:4000"
+    $chromepath = Join-Path $env:ProgramFiles "Google" "Chrome" "Application" "chrome.exe"
+    Start-Process -FilePath $chromepath "localhost:4000"
     Break
   }
   "prod*" {
-    $out = "bundle exec jekyll build $JKL_MYCONFIGS --verbose"
+    $out = "bundle exec jekyll build $JKL_MYCONFIGS"
     Invoke-Expression $out
     Break
   }
@@ -37,14 +37,23 @@ switch -Wildcard ($type) {
     if ($type.Contains("d")) { 
       moveDrafts
     }
-    $out = "bundle exec jekyll build $JKL_MYCONFIGS --verbose"
-    Write-Host "Calling $out"
-    Invoke-Expression $out
+    Try {
+      $out = "bundle exec jekyll build $JKL_MYCONFIGS"
+      Write-Host "Calling $out"
+      $er = (Invoke-Expression $out) 2>&1
+      if ($lastexitcode) { throw $er }      
+    }
+    Catch {
+      Write-Host "Error caught, aborting git push."
+      Break
+    }
+    
     # publish will push to git
     git checkout $BH_BRANCH
     git add .
     git commit -m $message
     git push origin $BH_BRANCH
+    Break
   }
   Default {
     Write-Host "Type arg must be one of: serve, production, publish, publishdraft"
