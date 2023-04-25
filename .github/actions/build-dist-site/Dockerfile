@@ -1,10 +1,16 @@
-ARG RUBY_VERSION=3.1.2
-FROM ruby:$RUBY_VERSION
+ARG RUBY_VERSION=2.7.4
+FROM ruby:$RUBY_VERSION-slim
 
 RUN apt-get update \
   && apt-get install -y \
   build-essential \
-  locales
+  git \
+  locales \
+  nodejs
+
+COPY Gemfile Gemfile
+
+RUN NOKOGIRI_USE_SYSTEM_LIBRARIES=true bundle install
 
 RUN \
   echo "en_US UTF-8" > /etc/locale.gen && \
