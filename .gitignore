@@ -8,7 +8,6 @@ unique/
 Gemfile*.lock
 _bak/
 *.bak
-_bibliography
 .liquid*
 .bundle/
 vendor/
