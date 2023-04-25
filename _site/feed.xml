@@ -5,32 +5,9 @@
     <description>Neurophysiology | Statistics | Biosignals Analysis | Data Science</description>
     <link>https://khrisgriffis.com/</link>
     <atom:link href="https://khrisgriffis.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 25 Apr 2023 12:03:02 -0700</pubDate>
-    <lastBuildDate>Tue, 25 Apr 2023 12:03:02 -0700</lastBuildDate>
+    <pubDate>Tue, 25 Apr 2023 12:16:25 -0700</pubDate>
+    <lastBuildDate>Tue, 25 Apr 2023 12:16:25 -0700</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
-    
-      <item>
-        <title>Essentially Me</title>
-        <description>&lt;h1 id=&quot;essentially-me&quot;&gt;Essentially Me&lt;/h1&gt;
-
-&lt;p&gt;Hello, I’m so glad you found this page. My name is Khris. I have a Ph.D. from the University of California, Los Angles, in the field of Molecular, Cellular, and Integrative Physiology. My area of expertise is in visual neuroscience. My &lt;a href=&quot;https://khrisgriffis.com/publications/griffis2022b.html&quot;&gt;doctoral work&lt;/a&gt; investigated molecular mechanisms of photon detection and processing in the mammalian rod visual pathway (&lt;a class=&quot;citation&quot; href=&quot;#griffis_mechanisms_2022&quot;&gt;Griffis, 2022&lt;/a&gt;).&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
-
-&lt;ul class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;griffis_mechanisms_2022&quot;&gt;Griffis, C.G. (2022) Mechanisms of Detection Sensitivity and Adaptation in the Rod Visual Pathway (PhD Thesis).&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 20 Apr 2023 00:00:00 -0700</pubDate>
-        <link>https://khrisgriffis.com/ramblings/EssentiallyMe.html</link>
-        <guid isPermaLink="true">https://khrisgriffis.com/ramblings/EssentiallyMe.html</guid>
-        
-        <category>featured</category>
-        
-        
-        <category>ramblings</category>
-        
-      </item>
     
       <item>
         <title>Rod bipolar cell contributions to changes in response  sensitivity during light adaptation
@@ -416,6 +393,70 @@ and may promote recovery of propriospinal circuitry.&lt;/p&gt;
         <category>olfactory glia</category>
         
         <category>neural repair</category>
+        
+        
+        <category>publications</category>
+        
+      </item>
+    
+      <item>
+        <title>Calcium oscillations in human pulmonary artery smooth muscle cells\: Developing a hierarchical clustering method for analysis and the effects of IL-1b
+</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://doi.org/10.1096/fasebj.2018.32.1_supplement.628.1&quot; target=&quot;_blank&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;h3 id=&quot;rationale&quot;&gt;Rationale&lt;/h3&gt;
+
+&lt;p&gt;Acute respiratory distress syndrome (ARDS) is
+characterized by lung inflammation, edema, and severe hypoxemia. In
+previous work, we showed that IL-1b is required for the development
+of severe hypoxemia in a murine model of acute lung injury,
+independent of measures of inflammation and edema. We hypothesized
+that IL-1b is altering the regulation of pulmonary blood flow to
+cause severe V/Q mismatching in acute lung injury. To explore
+possible mechanisms for this, we studied the effects of IL-1b on
+calcium flux in human pulmonary artery smooth muscle cells (hPASMCs)
+in response to the vasoconstrictor endothelin-1 (ET-1).&lt;/p&gt;
+
+&lt;h3 id=&quot;methods&quot;&gt;Methods&lt;/h3&gt;
+
+&lt;p&gt;hPASMCs were grown on glass bottom dishes to confluence and some
+dishes were treated with IL-1b (10ng/mL) for 3h. Cells were loaded
+with 5mM Cal-520 and stimulated with ET-1 (10nM) during fluorescent
+imaging on a Zeiss LSM confocal microscope. All cells from each
+field were individually selected using Fiji image analysis software.
+By visual inspection, we noticed that a marked number of cells
+showed oscillations in calcium flux after ET-1. To quantify
+oscillatory from non-oscillatory responses, we used a mixture of
+information theoretic and machine learning algorithms and developed
+a custom classifier tool. We applied this tool to our control and
+IL-1b-treated data (Figure 1) and created a contingency table for
+the effects of IL-1b on the induction of oscillatory responses. $\chi^2$
+confidence intervals and statistical significance were computed by
+bootstrap simulation with $10^5$ replicates using custom scripts in
+R(v3.4.1).&lt;/p&gt;
+
+&lt;h3 id=&quot;results&quot;&gt;Results&lt;/h3&gt;
+
+&lt;p&gt;In control dishes (n = 6), there were a total of
+444 non-oscillators cells and 379 oscillator cells. In dishes
+treated with IL-1b (n = 2), there were 50 non-oscillator cells and
+211 oscillators total. A bootstrap simulation based $\chi^2$ test was
+performed and a strong relationship was found between IL-1b
+treatment and the presence of oscillatory responses, 
+$\chi^2 = 96.7(71.2, 125.5; 95\% C.I.)$, $p&amp;lt;10^{-5}$.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Support or Funding Information&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Nat’l Heart, Lung &amp;amp; Blood Inst. K08HL125806&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This abstract is from the Experimental Biology 2018 Meeting. There is no full 
+text article associated with this abstract published in The FASEB Journal.&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 Apr 2018 01:01:01 -0700</pubDate>
+        <link>https://khrisgriffis.com/publications/kim2018.html</link>
+        <guid isPermaLink="true">https://khrisgriffis.com/publications/kim2018.html</guid>
         
         
         <category>publications</category>
