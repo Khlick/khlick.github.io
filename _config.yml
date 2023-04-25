@@ -125,7 +125,7 @@ markdown: kramdown
 
 #sass:
 #  style: compressed
-exclude: ['site.bat','compose.rb','README.md','*.bak']
+exclude: ['_site.ps1','_site.env','_newexp.ps1','README.md','*.bak','_predraft']
 include: ['_pages','.htaccess']
 defaults:
   - scope:
@@ -147,6 +147,9 @@ defaults:
 empty_array: []
 
 # PLUGIN CONFIGURATION
+plugins:
+  - jekyll/scholar
+
 highlighter: rouge
 kramdown: 
   input: GFM
@@ -156,3 +159,9 @@ kramdown:
     block:
       line_numbers: true
 
+scholar:
+  style: ./_bibliography/kgeuropean-journal-of-neuroscience.csl
+  locale: en
+  source: ./_bibliography/
+  bibliography: references.bib
+  bibliography_list_tag: "ul"

@@ -11,7 +11,7 @@ background-image: rambleimg.jpg
 {%  if site.posts %}{%
       if site.tags.featured %}
 <hr style="margin:0 0 1em 0;" />
-<h4>Featured</h4>
+<h4>Static Posts</h4>
 <ul class="post-list">{%
         for post in site.categories.ramblings %}{%
           if post.tags contains "featured" %}

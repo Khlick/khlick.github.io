@@ -12,6 +12,8 @@ _bibliography
 .liquid*
 .bundle/
 vendor/
+.obsidian
+_predraft
 
 # Windows image file caches
 Thumbs.db
