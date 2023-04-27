@@ -24,8 +24,8 @@ switch -Wildcard ($type) {
   "serve*" { 
     $out = "bundle exec jekyll serve $JKL_MYCONFIGS --watch --drafts $(($type.Contains('nof')) ? '' : '--future')"
     Invoke-Expression $out
-    $chromepath = Join-Path $env:ProgramFiles "Google" "Chrome" "Application" "chrome.exe"
-    Start-Process -FilePath $chromepath "localhost:4000"
+    # $chromepath = Join-Path $env:ProgramFiles "Google" "Chrome" "Application" "chrome.exe"
+    # Start-Process -FilePath $chromepath "localhost:4000"
     Break
   }
   "prod*" {

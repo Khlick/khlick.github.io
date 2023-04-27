@@ -16,8 +16,8 @@ article .inner .pcreds {
 }
 </style>
 
-{% if site.data.credits.creds %}
-<h4>Design and framework</h4>
+{% if site.data.credits.design-and-framework %}
+<h4>Design And Framework</h4>
 <table class="creds">
   {% for c in site.data.credits.creds
 %}<tr>
@@ -44,6 +44,7 @@ article .inner .pcreds {
 </table>
 {% endif %}
 
+<!-- Inspiration credits -->
 {% if site.data.credits.inspiration %}
 <h4>Inspiration</h4>
 <table class="creds"><tr><td>
@@ -93,3 +94,4 @@ else %}{{ site.data.credits.other-image-credit}}{%
 endif %}</p>
 {% endif %}
 
+<!-- TODO: parse site.data.credits list for $-section keys and build tables -->

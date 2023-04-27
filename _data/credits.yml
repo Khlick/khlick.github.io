@@ -6,6 +6,10 @@ licenses:
     name : special, by permission
   tm:
     name : Trademark
+  kg:
+    name : Copyright
+    icon : ©
+    url  : https://www.khlick.com/
   sil:
     name : SIL Open Font License, 1.1
     icon :
@@ -49,81 +53,80 @@ licenses:
 #
 # 'lic' values correspond to the keys in the license hash above
 # 
-# creds:
-#   - for : Design and theme
-#     by  : '@ajlkn'
-#     url : http://html5up.net/spectral
-#     lic : ccb3
-#   - for : Mods for a Jekyll blog
-#     by  : arkadianriver
-#     url : http://arkadianriver.com
-#     lic : mit
-#   - for : Icons
-#     by  : Dave Gandy
-#     url : https://fortawesome.github.io/Font-Awesome/
-#     lic : mit
-#   - for : Syntax-highlighting
-#     by  : Pygments.org
-#     url : http://pygments.org
-#     lic : mit
-#   - for : Lora font
-#     by  : Cyreal
-#     url : http://www.cyreal.org
-#     lic : sil
-#   - for : OpenSans font
-#     by  : Google
-#     url : https://www.google.com/fonts/attribution
-#     lic : apa2
-#   - for : Build framework
-#     by  : Jekyll
-#     url : https://jekyllrb.com/
-#     lic : mit
-#   - for : jQuery validation
-#     by  : Jörn Zaefferer
-#     url : http://jqueryvalidation.org/
-#     lic : mit
-#   - for : jQuery
-#     by  : jQuery Foundation
-#     url : https://jquery.com/
-#     lic : mit
+design-and-framework:
+  - for : Design and theme
+    by  : '@ajlkn'
+    url : http://html5up.net/spectral
+    lic : ccb3
+  - for : Mods for a Jekyll blog
+    by  : arkadianriver
+    url : http://arkadianriver.com
+    lic : mit
+  - for : Further modifications for Jekyll
+    by  : khrisgriffis
+    lic : mit
+  - for : Icons
+    by  : Dave Gandy
+    url : https://fortawesome.github.io/Font-Awesome/
+    lic : mit
+  - for : Syntax-highlighting
+    by  : Pygments.org
+    url : http://pygments.org
+    lic : mit
+  - for : Lora font
+    by  : Cyreal
+    url : http://www.cyreal.org
+    lic : sil
+  - for : OpenSans font
+    by  : Google
+    url : https://www.google.com/fonts/attribution
+    lic : apa2
+  - for : Build framework
+    by  : Jekyll
+    url : https://jekyllrb.com/
+    lic : mit
+  - for : jQuery validation
+    by  : Jörn Zaefferer
+    url : http://jqueryvalidation.org/
+    lic : mit
+  - for : jQuery
+    by  : jQuery Foundation
+    url : https://jquery.com/
+    lic : mit
+
+
+# 'lic' values correspond to the keys in the license hash above
+image-credit:
+  - src : /images/valley.jpg
+    by  : khrisgriffis
+    url : https://www.khlick.com/Cover/Sculptures-of-Earth/i-RZ57XZx/A
+    lic: kg
+  - src : /images/pubimg.jpg
+    by  : khrisgriffis
+    url : https://www.khlick.com/Cover/Refuge/i-q8PmWQX/A
+    lic: kg
+  - src : /images/rambleimg.jpg
+    by  : khrisgriffis
+    url : https://www.khlick.com/Cover/The-Dregs-of-Virtue/i-HPcDXj9/A
+    lic: kg
+  - src : /images/confimg.jpg
+    by  : khrisgriffis
+    url : https://www.khlick.com/Cover/Refuge/i-m4sv5XB/A
+    lic: kg
+  - src : /images/expimg.jpg
+    by  : khrisgriffis
+    url : https://www.khlick.com/Cover/The-Dregs-of-Virtue/i-2CfbGct/A
+    lic: kg
+
+#
+# This site has support for an inspirations section on credits.html, this can 
+# be populated using the following pattern:
 #
 # inspiration:
 #   - name : Michael Rose
 #     url  : https://github.com/mmistakes
 #   - name : David Ollerhead
 #     url  : https://github.com/oller
-#   - name : Bud Parr
-#     url  : https://github.com/budparr
-#   - name : Vladimir Zhbanko
-#     url  : https://twitter.com/vladdsm
-#   - name : Adam Garrett-Harris
-#     url  : https://twitter.com/agarrharr
-#
-#
-# Chances are you replaced at least the banner below and will want
-# to change the attribution.
-# 
-# 'lic' values correspond to the keys in the license hash above
-#
-image-credit:
-  - src : /images/valley.jpg
-    by  : khrisgriffis
-    url : https://www.khlick.com/Cover/Sculptures-of-Earth/i-RZ57XZx/A
-    lic: tm
-  - src : /images/pubimg.jpg
-    by  : khrisgriffis
-    url : https://www.khlick.com/Cover/Refuge/i-q8PmWQX/A
-    lic: tm
-  - src : /images/rambleimg.jpg
-    by  : khrisgriffis
-    url : https://www.khlick.com/Cover/The-Dregs-of-Virtue/i-HPcDXj9/A
-    lic: tm
-  - src : /images/confimg.jpg
-    by  : khrisgriffis
-    url : https://www.khlick.com/Cover/Refuge/i-m4sv5XB/A
-    lic: tm
-  - src : /images/expimg.jpg
-    by  : khrisgriffis
-    url : https://www.khlick.com/Cover/The-Dregs-of-Virtue/i-2CfbGct/A
-    lic: tm
 
+#
+# (KG) TODO: parse any lists with ending tag -section as a separate formatted section, similar to inspiration.

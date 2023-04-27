@@ -1885,6 +1885,15 @@ input[type=radio] + label:before {
 .icon.style3 {
   color: #76ddff;
 }
+.icon.style4 {
+  color: #505393;
+}
+.icon.style5 {
+  color: #ed4933;
+}
+.icon.style6 {
+  color: #fafafa;
+}
 .icon.styleN {
   font-size: 1.75em;
 }

@@ -1,5 +1,5 @@
 ---
-title: Principal Lecturer & Teaching Assistant
+title: Principle Lecturer & Teaching Assistant
 location: Life Sciences Core, UCLA
 categories:
   - experiences

@@ -10,11 +10,11 @@
   <div id="page-wrapper">
 
     {% include header.html %}
-
+    {% assign auth = site.data.authors[site.siteauthor] %}
     <!-- Banner -->
     <section id="banner">
       <div class="inner">
-        {% assign auth = site.data.authors[site.siteauthor] %}{%
+        {%-
                   assign test1 = auth.avatar | slice: 0,4 %}{%
                   if test1 == "http" %}{%
                     assign pic = auth.avatar %}{%
@@ -24,45 +24,37 @@
         <div class="image" style="display:inline-block;overflow:hidden;height:300px;width:200px;background:url({{ pic }});background-size:200px;border-radius: 50%"></div><p></p>
         <h1>{{ site.title }}</h1>
         <p>{{ site.description }}</p>
-        <!--
-              <ul class="actions">
-                <li><a href="#" class="button special">Activate</a></li>
-              </ul>
-              -->
-      </div>{%
-            if site.greeting %}
+        </div>{%-
+            if site.greeting -%}
       <a href="#greeting" class="more scrolly">Continue</a>{%
             else %}
       <a href="#landing_pages" class="more scrolly">Continue</a>{%
             endif %}
     </section>
     {% if site.greeting %}
-    <!-- One -->
+    <!-- Greetings with socials -->
     <section id="greeting" class="wrapper style1 special">
       <div class="inner">
         <header class="major">
           <h2>{% if site.greeting.title %}{{ site.greeting.title }}{% else %}{{ site.title }}{% endif %}</h2>
           <p>{% if site.greeting.text %}{{ site.greeting.text | markdownify }}{% else %}{{ site.description | markdownify }}{% endif %}</p>
         </header>
-        <ul class="icons major">{%
-              for socloc in site.social limit:3 %}{%
-                if socloc[1] %}{%
-                  if socloc[0] == 'email' %}
-          <li><a target="_blank" href="{%
-                    if socloc[1] contains '@' %}mailto:{{ socloc[1] }}{%
-                    else %}{{ socloc[1] }}{%
-                    endif %}" class="icon fa-envelope major style1"><span class="label">E-mail</span></a></li>{%
-                  else %}
-          <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-brands fa-{{ socloc[0] }} major style{% cycle 1, 2, 3 %}"><span class="label">{{ socloc[0] }}</span></a></li>{%
-                  endif %}{%
-                endif %}{%
-              endfor %}
+        <ul class="icons major">
+          {%- for socloc in site.social limit:site.social-count -%}
+              {%- if socloc[1] -%}
+                {%- if socloc[0] == 'email' -%}
+          <li><a target="_blank" href="{% if socloc[1] contains '@' -%}mailto:{{ socloc[1] }}{% else %}{{ socloc[1] }}{% endif %}" class="icon fa-envelope major style{%- cycle 'sty': 1, 2, 3, 4, 5, 6 %}"><span class="label">E-mail</span></a></li>
+                {% else %}
+          <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-brands fa-{{ socloc[0] }} major style{%- cycle 'sty': 1, 2, 3, 4, 5, 6 %}"><span class="label">{{ socloc[0] }}</span></a></li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
         </ul>
       </div>
     </section>{%
           endif %}
 
-    <!-- Two -->
+    <!-- Categories -->
     <section id="landing_pages" class="wrapper alt style2">
       {% assign sorted_pages = site.pages | sort:"key" %}
       {% for my_page in sorted_pages %}
@@ -91,7 +83,7 @@
         {% endfor %}
     </section>
 
-    <!-- Three -->{%
+    <!-- Featured Posts -->{%
       if site.tags.featured %}
     <section id="landing_features" class="wrapper style3 special">
       <div class="inner">
@@ -122,7 +114,7 @@
     </section>{%
       endif %}
 
-    <!-- CTA -->
+    <!-- Closing -->
     <section id="cta" class="wrapper style4">
       <div class="inner">
         <header>

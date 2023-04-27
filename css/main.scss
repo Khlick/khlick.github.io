@@ -582,18 +582,20 @@ $banner: $baseurl + "/{{ site.bannerimg }}";
 				font-size: _font(hdr-size-large);
 			}
 		}
-
-		&.style1 {
-			color: _palette(accent2, bg);
+		@each $sty in (1,2,3,4,5,6) {
+			&.style#{$sty} { color: _palette(accent#{$sty+1}, bg); }
 		}
+		// &.style1 {
+		// 	color: _palette(accent2, bg);
+		// }
 
-		&.style2 {
-			color: _palette(accent3, bg);
-		}
+		// &.style2 {
+		// 	color: _palette(accent3, bg);
+		// }
 
-		&.style3 {
-			color: _palette(accent4, bg);
-		}
+		// &.style3 {
+		// 	color: _palette(accent4, bg);
+		// }
 
 		&.styleN {
 			font-size: _font(hdr-size-xxlarge);
