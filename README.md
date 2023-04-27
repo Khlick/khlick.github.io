@@ -152,3 +152,5 @@ KEY | VALUE | REQUIREMENT
 `author` | Key name in `./_data/authors.yml` list. Setting this adds author blob. | _optional_
 `title` | Title name of the post. | _required_
 `excerpt` | Short summary or description. | _optional_ 
+
+_TODO: example of jekyll-scholar, see: https://www.amirasiaee.com/dailyreport/jekyll-scholar/_

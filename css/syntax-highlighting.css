@@ -85,9 +85,15 @@ span.linenos.special { color: #607A86; background-color: #263238; padding-left: 
 /* customizations */
 pre.lineno {
   padding-right: 0; 
-  margin-right: -1em;
+  margin-right: 0;
   color: #607A86;
 }
 table.rouge-table {
   margin-bottom: 0;
+}
+td.rouge-gutter {
+  width: 40px;
+}
+td.rouge-code {
+  width: auto;
 }

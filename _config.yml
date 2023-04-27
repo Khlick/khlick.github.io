@@ -157,7 +157,6 @@ plugins:
 
 highlighter: rouge
 kramdown: 
-  input: GFM
   syntax_highlighter_opts: 
     default_lang: matlab
     css_class: 'syntax'
