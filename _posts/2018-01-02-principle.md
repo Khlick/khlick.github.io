@@ -13,5 +13,5 @@ enddate: 2018-03-25 01:01:01 -07:00
 - Managed and created all course materials, including lectures, labs, and exams. I prepared and gave lecture 3 hours per week, and developed
 a 2-hour weekly, Python-based, computational lab for 86 undergraduates.
 - Leveraged Python notebooks to teach students to develop algorithms for analyzing biological data. Students gained understanding of
-statistical principals for experimental-data analysis with probability distributions, confidence intervals, hypothesis testing, statistical
+statistical principles for experimental-data analysis with probability distributions, confidence intervals, hypothesis testing, statistical
 independence, linear regression, ANOVA, statistical power and experimental design.
