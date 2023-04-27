@@ -1,0 +1,38 @@
+{%- comment -%}
+Return the image url given an object list and a page object
+
+::Inputs::
+image-list: list of image maps [{"name"=>"image.jpg"},{...}]
+page: page object to check against background-image
+title: site title
+
+
+::Returns::
+imageurl: string or empty, formatted as url
+
+{%- endcomment -%}
+{%- assign hasPageBg = include.page.background-image -%}
+{%- assign tlower = include.title | downcase -%}
+{%- assign hasSiteBg = include.image-list[tlower] -%}
+{%- if hasSiteBg or hasPageBg -%}
+  {%- assign bg = hasSiteBg | default: hasPageBg -%}
+  {%- assign first_char = bg | slice: 0 - -%}
+  {%- if first_char == '/' - -%}
+    {%- assign second_char = bg | slice: 1 - -%}
+      {%- if second_char == '/' - -%}
+      {%- comment -%}// remote{%- endcomment -%}
+      {%- assign imageurl = bg -%}
+      {%- else -%}
+      {%- comment -%}// local, not in /images/ {%- endcomment -%}
+      {%- assign imageurl = bg | prepend: site.baseurl -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- comment -%}// local, in /images/ {%- endcomment -%}
+    {%- assign imageurl = bg | prepend: "/images/" | prepend: site.baseurl -%}
+  {%- endif -%}
+{%- endif -%}
+{%- comment -%}
+return the imageurl
+
+{%- assign imageurl = imageurl | strip -%}
+{%- endcomment -%}

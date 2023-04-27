@@ -20,15 +20,13 @@ lang: en-us # used in HTML lang attributes
 
 # custom
 siteauthor: khrisgriffis # should match a key in ./data/_authors.yml
+
 # Set the following to files located in ./images
-bannerimg: "valley.jpg" # index background image
-
-# This site uses 3 post types, based on categories in the post header.
-# For each type, you may set a 
-rambleimg: "rambleimg.jpg"
-pubimg: "pubimg.jpg"
-expimg: "expimg.jpg"
-
+images:
+  landing: "valley.jpg" # index background image
+  publications: "pubimg.jpg"
+  missives: "rambleimg.jpg"
+  experiences: "expimg.jpg"
 
 
 # on landing page
@@ -46,6 +44,17 @@ greeting:
 # - displayed at the bottom
 closing-head: Khris Griffis, Ph.D.
 closing-para: 
+
+# site keywords
+keywords:
+  - science blog
+  - khrisgriffis
+  - khris griffis
+  - khlick
+  - visual neuroscience
+  - electrophysiology
+  - jekyll blog
+
 
 # Social accounts: to get a proper fa-icon, use the fa-?? base name
 # this number will adjust, in order, how many of the below social accounts will 
@@ -96,7 +105,7 @@ social:
   #amazon:
 
 # - title for your blog's featured posts
-features-title: Highlights
+features-title: Pinned Posts
 
 # choose where to put back and next links:
 # top, bottom, both, none

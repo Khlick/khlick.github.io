@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="20" role="img" aria-label="jekyll-scholar: 7.1.0">
+  <title>Ruby: 3.2.1</title>
+  <linearGradient id="s" x2="0" y2="100%">
+    <stop offset="0" stop-color="#fff" stop-opacity=".3" />
+    <stop offset="1" stop-opacity=".15" />
+  </linearGradient>
+  <clipPath id="r">
+    <rect width="122" height="20" rx="3" fill="#fff" />
+  </clipPath>
+  <g clip-path="url(#r)">
+    <rect width="36" height="20" fill="#fff" />
+    <rect x="36" width="39" height="20" fill="#9cf" />
+    <rect width="75" height="20" fill="url(#s)" />
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
+    <image href="./header-ruby-logo.png" height="16" x="10" y="2"></image>
+    <text aria-hidden="true" x="555" y="150" fill="#ccc" fill-opacity=".3" transform="scale(.1)" textLength="290">3.2.1</text>
+    <text x="555" y="140" transform="scale(.1)" fill="#333" textLength="290">3.2.1</text>
+  </g>
+</svg>

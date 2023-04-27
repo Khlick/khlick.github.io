@@ -4402,7 +4402,8 @@ body.is-mobile.landing #footer {
 .item {
   padding-top: 100px;
   min-height: 150px;
-  min-width: 90%;
+  min-width: 800px;
+  max-width: 90%;
   position: relative;
 }
 .item:before {

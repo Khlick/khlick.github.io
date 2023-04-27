@@ -2,7 +2,7 @@
 title: {{title}}
 excerpt: EXCERPT
 categories:
-  - ramblings
+  - missives
 date: {{date}}
 ---
 # {{ page.title }}

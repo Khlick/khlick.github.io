@@ -3,7 +3,7 @@
 ---
 
 $baseurl: '{{ site.baseurl }}/images';
-$banner: $baseurl + "/{{ site.bannerimg }}";
+$banner: $baseurl + "/{{ site.images.landing }}";
 
 @import 'libs/vars';
 @import 'libs/functions';
@@ -2390,8 +2390,9 @@ $banner: $baseurl + "/{{ site.bannerimg }}";
 .item {
   padding-top: 100px;
   min-height: 150px;
-	min-width: 90%;
-  position: relative;
+	min-width: 800px;
+	max-width: 90%;
+	position: relative;
 	&:before {
 		background: #fff;
     border: 4px solid #000;

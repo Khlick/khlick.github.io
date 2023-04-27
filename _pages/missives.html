@@ -1,19 +1,17 @@
 ---
 key: 3
-title: Ramblings
-permalink: /ramblings/
+title: Missives
+permalink: /missives/
 options: fullwidth
-excerpt: A collection of projects, writings, and demonstrations.
-image: rambleimg.jpg
-background-image: rambleimg.jpg
+excerpt: A collection of writings, projects, etc..
 ---
 
 {%  if site.posts %}{%
       if site.tags.featured %}
 <hr style="margin:0 0 1em 0;" />
-<h4>Static Posts</h4>
+<h4>Pinned Posts</h4>
 <ul class="post-list">{%
-        for post in site.categories.ramblings %}{%
+        for post in site.categories.missives %}{%
           if post.tags contains "featured" %}
   <li class="2u 3u(large) 5u(medium) 11u(small)">
     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
@@ -32,7 +30,7 @@ background-image: rambleimg.jpg
 
 <ul style="list-style-type: none;">{%
       assign p = '9999'
-%}{%  for post in site.categories.ramblings
+%}{%  for post in site.categories.missives
 %}{%    assign n = post.date | date: "%Y"
 %}{%    if n != p
 %}{%      assign p = n
